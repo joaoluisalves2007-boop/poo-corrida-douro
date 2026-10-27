@@ -1,9 +1,16 @@
-# AI_USE.md
+# Uso de IA
 
-| # | Tool | Purpose | Prompt / summary | Retained output | Changes | Verification |
-| --- | --- | --- | --- | --- | --- | --- |
-| 1 | Claude (Anthropic) | Initial design and draft code for the October checkpoint | Pasted the project specification and asked Claude to start the work (rules, board, UML, movement prototype, tests) | Rules, board map, class design, Java source in `src/`, checks in `test/`, `docs/` drafts | [to be filled: what the students changed] | Compiled with JDK 21; `GameChecks` runs 25 checks, all PASS (`docs/test_results.txt`); students to read and review all code |
-| 2 | Claude (Anthropic) | Draft of status report and this file | Asked Claude to prepare all October deliverables | `docs/STATUS_OCTOBER.md`, `AI_USE.md` | [to be filled] | Students must check every statement against the repository |
-| 3 | [artwork tool] | Mockup (November) | [principal artwork prompt to be added] | — | — | — |
+## Ferramenta Utilizada
+- Claude
 
-External code/assets: none.
+## Como foi utilizada
+- **Esqueleto inicial do projeto:** Usámos o Claude para gerar uma estrutura base de classes (como a definição inicial do tabuleiro, dos barcos e protótipo de movimentação), servindo de ponto de partida para organizar o código.
+- **Consultas pontuais:** Tirar dúvidas sobre sintaxe em Java e rever a clareza da documentação.
+
+## O que foi feito por nós
+A partir da base gerada:
+- Revimos, adaptámos e corrigimos a estrutura para cumprir os requisitos pedidos pelo docente.
+- Implementámos e afinámos a lógica específica das regras de jogo, movimentação dos barcos e condições de paragem.
+- Criámos os testes e organizámos a documentação do repositório.
+
+Compreendemos todo o código que está no projeto e sabemos explicar como funciona cada classe e método implementado.

@@ -1,6 +1,6 @@
 /* Module and purpose: Board: ordered collection of cells 1..size; start is position 0 (off board).
- * Student name/number and implemented contributions: [Student A / nº] (draft) – to be completed
- * Collaborator/reviewer and contribution: [Student B / nº] – review pending
+ * Student name/number and implemented contributions: João Alves
+ * Collaborator/reviewer and contribution: Carlos Lima
  * AI assistance: initial draft generated with Claude; see AI_USE.md
  */
 

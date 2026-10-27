@@ -1,6 +1,6 @@
 /* Module and purpose: RandomDice: random rolls 1-6 (seedable for repeatable runs).
- * Student name/number and implemented contributions: [Student A / nº] (draft) – to be completed
- * Collaborator/reviewer and contribution: [Student B / nº] – review pending
+ * Student name/number and implemented contributions: João Alves
+ * Collaborator/reviewer and contribution: Carlos Lima
  * AI assistance: initial draft generated with Claude; see AI_USE.md
  */
 

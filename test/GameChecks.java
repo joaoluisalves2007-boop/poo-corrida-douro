@@ -1,8 +1,4 @@
-/* Module and purpose: Repeatable automated checks (predetermined rolls); each prints start state, input, expected, result.
- * Student name/number and implemented contributions: [Student A / nº] (draft) – to be completed
- * Collaborator/reviewer and contribution: [Student B / nº] – review pending
- * AI assistance: initial draft generated with Claude; see AI_USE.md
- */
+
 import java.util.List;
 import java.util.function.Supplier;
 

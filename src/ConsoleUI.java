@@ -1,8 +1,3 @@
-/* Module and purpose: ConsoleUI: all console reading/printing; delegates every rule to Game.
- * Student name/number and implemented contributions: João Alves
- * Collaborator/reviewer and contribution: Carlos Lima
- * AI assistance: initial draft generated with Claude; see AI_USE.md
- */
 
 import java.util.List;
 import java.util.OptionalInt;
@@ -14,7 +9,7 @@ public class ConsoleUI {
     public static void main(String[] args) { new ConsoleUI().run(); }
 
     public void run() {
-        System.out.println("=== CORRIDA DO DOURO ===");
+        System.out.println("=== CORRIDA DOURO ===");
         boolean manual = chooseMode();
         DiceSource dice = new RandomDice();
         Game game = newGame();

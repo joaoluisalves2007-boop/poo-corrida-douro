@@ -1,8 +1,3 @@
-/* Module and purpose: TurnResult: immutable description of one turn, consumed by the console.
- * Student name/number and implemented contributions: João Alves
- * Collaborator/reviewer and contribution: Carlos Lima
- * AI assistance: initial draft generated with Claude; see AI_USE.md
- */
 
 import java.util.List;
 

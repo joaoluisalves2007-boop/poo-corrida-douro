@@ -1,8 +1,3 @@
-/* Module and purpose: RandomDice: random rolls 1-6 (seedable for repeatable runs).
- * Student name/number and implemented contributions: João Alves
- * Collaborator/reviewer and contribution: Carlos Lima
- * AI assistance: initial draft generated with Claude; see AI_USE.md
- */
 
 import java.util.Random;
 

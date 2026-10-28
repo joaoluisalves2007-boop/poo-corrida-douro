@@ -1,8 +1,3 @@
-/* Module and purpose: Board: ordered collection of cells 1..size; start is position 0 (off board).
- * Student name/number and implemented contributions: João Alves
- * Collaborator/reviewer and contribution: Carlos Lima
- * AI assistance: initial draft generated with Claude; see AI_USE.md
- */
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +5,7 @@ import java.util.List;
 public class Board {
     private final List<Cell> cells = new ArrayList<>();
 
-    /** Builds a board of the given size; specials replace normal cells. */
+    
     public Board(int size, List<Cell> specials) {
         if (size < 2) throw new IllegalArgumentException("Board too small");
         for (int i = 1; i <= size; i++) cells.add(new NormalCell(i));
@@ -27,7 +22,7 @@ public class Board {
         return cells.get(position - 1);
     }
 
-    /** "Corrida do Douro": 30 cells, 5 advance and 4 return cells (one effect chain: 9->14->10->15). */
+    
     public static Board douro() {
         return new Board(30, List.of(
             new AdvanceCell(3, 8, "Eléctrico 22"),

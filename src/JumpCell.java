@@ -1,8 +1,3 @@
-/* Module and purpose: JumpCell: abstract cell that moves the pawn to a fixed target (shared logic of advance/return).
- * Student name/number and implemented contributions: João Alves
- * Collaborator/reviewer and contribution: Carlos Lima
- * AI assistance: initial draft generated with Claude; see AI_USE.md
- */
 
 public abstract class JumpCell extends Cell {
     private final int target;

@@ -1,8 +1,3 @@
-/* Module and purpose: Game: rules engine (turn order, movement, overshoot, effect chaining, end conditions). No console I/O.
- * Student name/number and implemented contributions: João Alves
- * Collaborator/reviewer and contribution: Carlos Lima
- * AI assistance: initial draft generated with Claude; see AI_USE.md
- */
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,14 +19,9 @@ public class Game {
         this.maxRounds = maxRounds;
     }
 
-    /**
-     * Plays one turn with the given roll. Invalid roll or finished game throws and leaves the state unchanged.
-     * Rules: reaching or passing the last cell wins; effects chain (max MAX_CHAIN);
-     * shared cells allowed; after maxRounds the pawn further ahead wins (equal = draw).
-     */
     public TurnResult playTurn(int roll) {
-        if (finished) throw new IllegalStateException("Game is over");
-        if (roll < 1 || roll > 6) throw new IllegalArgumentException("Roll must be 1-6");
+        if (finished) throw new IllegalStateException("O jogo acabou");
+        if (roll < 1 || roll > 6) throw new IllegalArgumentException("O lançamento deve ser entre 1-6");
         Player p = players.get(current);
         int from = p.getPosition();
         int pos = from + roll;
@@ -67,7 +57,6 @@ public class Game {
         return new TurnResult(p.getName(), roll, from, landed, effects, pos, finished, outcome);
     }
 
-    /** Resets positions, turn order and round counter. */
     public void restart() {
         for (Player p : players) p.moveTo(0);
         current = 0; round = 1; finished = false; winner = null;
@@ -81,7 +70,6 @@ public class Game {
     public boolean isFinished() { return finished; }
     public Player getWinner() { return winner; }
 
-    /** Model view, e.g. "(22, 24)". */
     public String positions() {
         return "(" + players.get(0).getPosition() + ", " + players.get(1).getPosition() + ")";
     }

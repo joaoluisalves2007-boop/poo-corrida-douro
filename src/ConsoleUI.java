@@ -61,7 +61,7 @@ public class ConsoleUI {
     private void printTurn(TurnResult r) {
         System.out.println(r.player() + " tirou " + r.roll() + ": " + r.from() + " -> " + r.landed());
         for (String e : r.effects()) System.out.println("  Efeito! " + e);
-        if (!r.effects().isEmpty()) System.out.println("  Posição final do turno: " + r.to());
+        if (!r.effects().isEmpty()) System.out.println("  Posição final da ronda: " + r.to());
         if (!r.outcome().isEmpty()) System.out.println(r.outcome());
     }
 

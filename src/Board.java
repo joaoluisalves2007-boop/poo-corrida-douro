@@ -26,7 +26,7 @@ public class Board {
     public static Board douro() {
         return new Board(30, List.of(
             new AdvanceCell(3, 8, "Eléctrico 22"),
-            new AdvanceCell(9, 14, "Barco Rabelo"),
+            new AdvanceCell(7, 12, "Barco Rabelo"),
             new AdvanceCell(10, 15, "Funicular dos Guindais"),
             new AdvanceCell(19, 24, "Metro D. Luís I"),
             new AdvanceCell(22, 27, "Vento a favor"),
